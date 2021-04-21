@@ -1,0 +1,56 @@
+<!DOCTYPE: html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Zadanie2</title>
+
+	<script type="text/javascript">
+		var data = new Date();
+	</script>
+
+	<style>
+		#container { width = 100%; margin-left: auto; margin-right: auto }
+		#PierwszyObszarBoczny { width:200px; height:300px; float:left; text-align: center; padding:15px}
+		#DrugiObszarBoczny { width:200px; height:300px; float:right; text-align: center; padding:15px}
+		#ObszarRoboczy {height:300px; text-align: center; padding:15px}
+		#Menu { color: white; }
+		#ObszarLogowania { clear:both; text-align:right; background-color: lightskyblue; padding:5px }
+		#Logo {padding:5px}
+		.option {float: left;min-width: 50px;height: 25px;font-size: 18px;padding: 10px;
+			border-right: 2px dotted white; ; background-color: cornflowerblue}
+		.option:hover {background-color: dodgerblue; cursor: pointer}
+	</style>
+</head>
+<body>
+
+	<div id=container">
+	<div id="Nagłówek">
+		<div id="Logo">Logo</div>
+		<div id="Menu">
+			<div class="option"> Strona główna </div>
+			<div class="option"> Dystrybucje </div>
+			<div class="option"> Instalacja </div>
+			<div class="option"> Polecenia </div>
+			<div class="option"> Linus Torvalds </div>
+			<div class="option"> O projekcie </div>
+		</div>
+		<div id="ObszarLogowania">Zaloguj</div>
+	</div>
+
+	<div id="Strona">
+		<div id="Naglowek"></div>
+		<div id="Tresc">
+			<div id="PierwszyObszarBoczny">Szymon Nowakowski</div>
+			<div id="DrugiObszarBoczny">
+				<script type="text/javascript">
+					document.getElementById("DrugiObszarBoczny").innerHTML = data;
+				</script>
+			</div>
+			<div id="ObszarRoboczy">Dowolny napis tekstowy</div>
+		</div>
+
+	</div>
+	</div>
+
+</body>
+</html>
