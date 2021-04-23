@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie3.2</title>
+</head>
+<body>
+    <form name="formularz" onsubmit="return Porownanie()">
+        Podaj ciągiem liczby, aby porównać, która z nich jest największa.<br>
+        Podaj liczby: <input type="text" name="liczby" id="liczby"/> <br>
+        <input type="submit" value="Oblicz">
+    </form>
+
+    <script>
+        function Porownanie() {
+            const liczby = document.getElementById('liczby').value
+            const listaliczb = liczby.split('').map(Number)
+            var najwieksza = 0;
+
+
+             if (isNaN(liczby)) {
+                alert("Wprowadź tylko liczby!")
+            }else{
+            for (let i = 0; i <= liczby.length; i++) {
+                if (liczby[i] > najwieksza) {
+                    najwieksza = liczby[i];
+                }
+            }
+            alert("Największa liczba z podanych: " + listaliczb + " to: " + najwieksza)}
+
+        }
+
+    </script>
+</body>
+</html>
