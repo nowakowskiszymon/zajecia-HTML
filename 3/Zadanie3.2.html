@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie3.2</title>
+</head>
+<body>
+    <form name="formularz" onsubmit="return Porownanie()">
+        Podaj liczby, aby porównać, która z nich jest największa.<br>
+        Podaj 1 liczbę: <input type="text" id="liczba1"/> <br>
+        Podaj 2 liczbę: <input type="text" id="liczba2"/> <br>
+        Podaj 3 liczbę: <input type="text" id="liczba3"/> <br>
+        Podaj 4 liczbę: <input type="text" id="liczba4"/> <br>
+        Podaj 5 liczbę: <input type="text" id="liczba5"/> <br>
+        Podaj 6 liczbę: <input type="text" id="liczba6"/> <br>
+        Podaj 7 liczbę: <input type="text" id="liczba7"/> <br>
+        <input type="submit" value="Oblicz">
+    </form>
+
+    <script>
+        function Porownanie() {
+            var najwieksza = 0;
+            const l1 = parseInt(document.getElementById("liczba1").value)
+            const l2 = parseInt(document.getElementById("liczba2").value)
+            const l3 = parseInt(document.getElementById("liczba3").value)
+            const l4 = parseInt(document.getElementById("liczba4").value)
+            const l5 = parseInt(document.getElementById("liczba5").value)
+            const l6 = parseInt(document.getElementById("liczba6").value)
+            const l7 = parseInt(document.getElementById("liczba7").value)
+
+            const liczby = [l1,l2,l3,l4,l5,l6,l7]
+
+            /*if (l1===null || l2=== null || l3=== null || l4=== null || l5===null|| l6===null || l7=== null) {
+                alert("Wypełnij wszystkie pola!")
+                return false
+            }else if (isNaN(l1) || isNaN(l2) || isNaN(l3) || isNaN(l4) || isNaN(l5) || isNaN(l6) || isNaN(l7)) {
+                alert("Wprowadź tylko liczby!")
+            }else {*/
+           // const liczby = [l1,l2,l3,l4,l5,l6,l7]
+
+            for (let i = 0; i <= liczby.length; i++) {
+                if (liczby[i] > najwieksza) {
+                    najwieksza = liczby[i];
+                }
+            }
+            alert(najwieksza)
+
+        }
+
+    </script>
+
+
+</body>
+</html>
