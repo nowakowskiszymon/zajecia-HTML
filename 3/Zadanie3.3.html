@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+<body>
+
+<form name="form1" onsubmit="return fibonacci()">
+    Podaj numer liczby Fibonacciego, którą chcesz obliczyć:
+    <input type="text" name="numer">
+    <input type="submit" id="Oblicz">
+</form>
+
+<script type = "text/javascript">
+
+
+    function fibonacci()
+    {
+        const numer = document.forms['form1']['numer'].value
+        var num1=0;
+        var num2=1;
+        var sum;
+        for (var i = 0; i < numer; i++)
+        {
+            sum=num1+num2;
+            num1=num2;
+            num2=sum;
+        }
+        alert(numer + " liczba ciągu Fibonacciego to: " + num2)
+        return true;
+    }
+
+
+</script>
+</body>
+</html>
