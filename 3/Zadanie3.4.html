@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+
+    <form name="form1" onsubmit="return nwd()">
+        Podaj dwie liczby, by obliczyć ich NWD <br>
+        1 liczba: <input type="text" name="numer1"> <br>
+        2 liczba: <input type="text" name="numer2"> <br>
+        <input type="submit" value="Oblicz">
+    </form>
+
+</head>
+<body>
+
+
+    <script>
+        function nwd()
+        {   var numer1 = document.forms['form1']['numer1'].value
+            var numer2 = document.forms['form1']['numer2'].value
+            const numer11 = numer1
+            const numer22 = numer2
+
+            var num0
+
+            if(numer2>numer1){
+                num0 = numer2
+                numer2 = numer1
+                numer1 = num0
+            }
+            if (numer1%numer2!==0) {
+                while (numer1%numer2!==0) {
+                    var dzielenie = numer1 % numer2
+                    numer1 = numer2
+                    numer2 = dzielenie
+                }
+                alert("Największy wspólny dzielnik liczb: " + numer11 + " i " + numer22 + " to: " + dzielenie)
+                return false
+            }else {
+                alert("Największy wspólny dzielnik liczb: " + numer1 + " i " + numer2 + " to: " + numer2)
+                return false
+            }
+        }
+    </script>
+
+</body>
+</html>
