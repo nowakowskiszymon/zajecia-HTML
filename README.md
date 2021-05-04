@@ -9,9 +9,9 @@ W drugim pliku znajduje się kod tworzący stronę internetową, w której skupi
 wygodnie wybierać różne opcje, których w danej chwili poszukuje. 
 
 Trzeci pilk to zbiór czterech różnych skryptów.
- 1. Pierwszy
- 2. Drugi
- 3. Trzeci 
- 4. Czwarty 
+ 1. Pierwszy to formularz, który wysyła użytkownikowi informację zwrotną, gdy nie wypełni któregoś pola, lub nie napisze imienia bądź nazwiska z wielkiej liery. Sprawdza on również poprawność znaków w określonych polach.
+ 2. Drugi zajmuje się rozdzielaniem wprowadzonego przez użytkownika ciągu liczb pojedynczych, rozdzielaniu ich, a następnie porównywaniu. Jako komunikat zwrotny wyświetla największą z wprowadzonych liczb.
+ 3. Trzeci oblicza wartośc elementu ciągu Fibonacciego, wprowadzonego przez użytkownika. 
+ 4. Czwarty po wprowadzeniu dwóch liczb, liczy ich Największy Wspólny Dzielnik(NWD). Na podstawie zakodowanych funkcji skrypt przeprowadza określone operacje matematyczne, dzięki czemu jest w stanie wyświetlić prawidłowy wynik.
 
 
