@@ -20,11 +20,14 @@ W drugim pliku znajduje się kod tworzący stronę internetową, w której skupi
 wygodnie wybierać różne opcje, których w danej chwili poszukuje. 
 
 
+
+
+
 ## Trzeci plik
 Trzeci pilk to zbiór czterech różnych skryptów.
  ### 1. Pierwszy 
  to formularz, który wysyła użytkownikowi informację zwrotną, gdy nie wypełni któregoś pola, lub nie napisze imienia bądź nazwiska z wielkiej liery. Sprawdza on również poprawność znaków w określonych polach.
- #### 2. Drugi 
+ ### 2. Drugi 
  zajmuje się rozdzielaniem wprowadzonego przez użytkownika ciągu liczb pojedynczych, rozdzielaniu ich, a następnie porównywaniu. Jako komunikat zwrotny wyświetla największą z wprowadzonych liczb.
  ### 3. Trzeci 
  oblicza wartośc elementu ciągu Fibonacciego, wprowadzonego przez użytkownika. 
