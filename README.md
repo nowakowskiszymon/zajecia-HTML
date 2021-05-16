@@ -8,6 +8,7 @@ Celem projektu jest wykonanie kilku ćwiczeń, które mają stanowić wprowadzen
 * [Pierwszy plik](#pierwszy-plik)
 * [Drugi plik](#drugi-plik)
 * [Trzeci plik](#trzeci-plik)
+* [Status projektu](#status-projektu)
 
 
 ## Pierwszy plik 
@@ -29,4 +30,6 @@ Trzeci pilk to zbiór czterech różnych skryptów.
  - Czwarty 
  po wprowadzeniu dwóch liczb, liczy ich Największy Wspólny Dzielnik(NWD). Na podstawie zakodowanych funkcji skrypt przeprowadza określone operacje matematyczne, dzięki czemu jest w stanie wyświetlić prawidłowy wynik.
 
+## Status projektu
+ Projekt znajduje się w ciągłym rozwoju, w przyszłości zamierzam dodać więcej wykonanych zadań.
 
