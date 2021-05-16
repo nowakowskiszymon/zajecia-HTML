@@ -15,11 +15,13 @@ Celem projektu jest wykonanie kilku ćwiczeń, które mają stanowić wprowadzen
 Pierwszy plik zawiera stronę internetową, inspirowaną firmą Apple. 
 Zawiera ona różne informacje o wspomnianej firmie, jak i przykładowy formularz do wypełnienia.
 
-![Algorithm zdj1](./obrazy/zdj1.png)
+![Zadanie 1 zdj1](./obrazy/zdj1.png)
+
 ## Drugi plik
 W drugim pliku znajduje się kod tworzący stronę internetową, w której skupiliśmy się na zajęciach na rozbudowaniu interaktywnego menu, z którego użytkownik może
 wygodnie wybierać różne opcje, których w danej chwili poszukuje. 
 
+![Zadanie 2 zdj2](./obrazy/zdj2.png)
 
 ## Trzeci plik
 Trzeci pilk to zbiór czterech różnych skryptów.
