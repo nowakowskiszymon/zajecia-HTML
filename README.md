@@ -5,9 +5,9 @@ Repozytorium ze zbiorem zadań z zajęć z HTML'a i JavaScriptu
 Celem projektu jest wykonanie kilku ćwiczeń, które mają stanowić wprowadzenie do HTML'a i JavaScriptu.
 
 ## Table of contents
-** Pierwszy plik
+* [Pierwszy plik] (#Pierwszy-plik)
 
-##Pierwszy plik zawiera stronę internetową, inspirowaną firmą Apple. 
+## Pierwszy plik zawiera stronę internetową, inspirowaną firmą Apple. 
 Zawiera ona różne informacje o wspomnianej firmie, jak i przykładowy formularz do wypełnienia.
 
 W drugim pliku znajduje się kod tworzący stronę internetową, w której skupiliśmy się na zajęciach na rozbudowaniu interaktywnego menu, z którego użytkownik może
