@@ -1,4 +1,4 @@
-# zajecia-HTML
+# Zadania w HTML
 
 Repozytorium ze zbiorem zadań z zajęć z HTML'a i JavaScriptu
 
