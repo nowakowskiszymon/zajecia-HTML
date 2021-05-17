@@ -30,11 +30,11 @@ Trzeci pilk to zbiór czterech różnych skryptów.
   ![Zadanie 3.1 zad6](./obrazy/zad6.png)
  - Drugi zajmuje się rozdzielaniem wprowadzonego przez użytkownika ciągu liczb pojedynczych, rozdzielaniu ich, a następnie porównywaniu. Jako komunikat zwrotny wyświetla największą z wprowadzonych liczb.
  
-![Zadanie 3.2 zad5](./obrazy/zad4.png)
+![Zadanie 3.2 zad5](./obrazy/zad5.png)
  - Trzeci 
  oblicza wartośc elementu ciągu Fibonacciego, wprowadzonego przez użytkownika. 
  
- ![Zadanie 3.3 zad4](./obrazy/zad5.png)
+ ![Zadanie 3.3 zad4](./obrazy/zad4.png)
  - Czwarty 
  po wprowadzeniu dwóch liczb, liczy ich Największy Wspólny Dzielnik(NWD). Na podstawie zakodowanych funkcji skrypt przeprowadza określone operacje matematyczne, dzięki czemu jest w stanie wyświetlić prawidłowy wynik.
  
