@@ -25,7 +25,7 @@ wygodnie wybierać różne opcje, których w danej chwili poszukuje.
 
 ## Trzeci plik
 Trzeci pilk to zbiór czterech różnych skryptów.
- - Pierwszy to formularz, który wysyła użytkownikowi informację zwrotną, gdy nie wypełni któregoś pola, lub nie napisze imienia bądź nazwiska z wielkiej liery. Sprawdza on również poprawność znaków w określonych polach.
+ - Pierwszy to formularz, który wysyła użytkownikowi informację zwrotną, gdy nie wypełni któregoś pola, lub nie napisze imienia bądź nazwiska z wielkiej liery. Sprawdza on również poprawność znaków w określonych polach. Jeżeli wszystkie dane są poprawne, program wita użytkownika.
  
   ![Zadanie 3.1 zad6](./obrazy/zad6.png)
  - Drugi zajmuje się rozdzielaniem wprowadzonego przez użytkownika ciągu liczb pojedynczych, rozdzielaniu ich, a następnie porównywaniu. Jako komunikat zwrotny wyświetla największą z wprowadzonych liczb.
