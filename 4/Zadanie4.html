@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+</head>
+<body>
+<div id="mapid" style="width: 600px; height: 400px;"></div>
+<script>
+    var mymap = L.map('mapid').setView([54.43466, 18.555241], 16);
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1
+
+    }).addTo(mymap);
+    L.marker([54.44263361592448, 18.555818793452573]).addTo(mymap)
+        .bindPopup("<b>Wydział Zarządzania</b><br />Uniwersytet Gdański").openPopup();
+    L.marker([54.44510248272377, 18.5535719183311]).addTo(mymap)
+        .bindPopup("<b>Centrum dydaktyczno-konferencyjne</b><br />Uniwersytet Gdański").openPopup();
+    L.marker([54.445095220062045, 18.554787412888895]).addTo(mymap)
+        .bindPopup("<b>Wydział Ekonomiczny!</b><br />Uniwersytet Gdański").openPopup();
+
+    L.circle([54.44484164857607, 18.55741609263876], 50, {
+        color: 'red',
+        fillColor: '#f03',
+        fillOpacity: 0.5
+    }).addTo(mymap).bindPopup("Komenda Policji w Sopocie");
+
+    L.polygon([
+        [54.445039214457495, 18.553010518994398],
+        [54.4450628271087, 18.5532250103484],
+        [54.44539190027396, 18.553122970868372],
+        [54.44536223334396, 18.552848088749897],
+    ]).addTo(mymap).bindPopup("Parking dla pracowników");
+
+    L.polygon([
+        [54.44540041732651, 18.55241782363541],
+            [54.44497480224268, 18.55253030367649],
+            [54.44503162693201, 18.552975144076726],
+            [54.44544099877848,18.55275728960214]
+    ]).addTo(mymap).bindPopup("Parking dla studentów");
+
+    var popup = L.popup();
+    function onMapClick(e) {
+        popup
+            .setLatLng(e.latlng)
+            .setContent("Kliknąłeś na: " + e.latlng.toString())
+            .openOn(mymap);
+    }
+    mymap.on('click', onMapClick);
+</script>
+</body>
+</html>
