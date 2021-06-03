@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <button class="test" id="testAnim5"  type="button">Wywołaj animację wydłużającą się</button><br>
+    <button class="test" id="testAnim" type="button">Wywołaj animację chowającą się</button><br>
+    <button class="test" id="testAnim2" type="button">Wywołaj animację prostokątną</button><br>
+    <button class="test" id="testAnim3" type="button">Wywołaj animację prostokątną2</button><br>
+    <button class="test" id="testAnim4" type="button">Wywołaj animację powiększającą się co kliknięcie</button><br>
+    <button class="test-ajax" id="test-ajax" type="button">Kliknij i zobacz w konsoli debugera</button>
+    <ul class="user-list"></ul>
+    <script type="text/javascript">
+
+        $('#testAnim')
+            .css({ background : 'blue' })
+            .delay(2000)
+            .slideUp() //zwijanie do góry
+            .delay(1000)
+            .fadeIn(1000); //pojawianie się
+
+        $("#testAnim2").on('click', function(){
+            $(this).animate({
+                width: "500px",
+                opacity: 0.4,
+                fontSize: "3em",
+                borderWidth: "10px" },
+            1500); });
+
+        $("#testAnim3").on('click', function(){ $(this).animate({ height:200,
+                width:400,
+                opacity: 0.5 },
+            { duration: 1000, //czas animacji
+                ease: 'linear', //typ animacji
+                complete: function() { //funkcja zwrotna alert("koniec animacji");
+                }
+            } ); });
+
+        $("#testAnim4").on('click', function(){ $(this).animate({ width: "+=" + 50,
+            height: "+=" + 10,
+            opacity: "-=" + 0.1,
+            duration : 2000 //inny sposób deklaracji czasu trwania animacji
+             }); });
+
+        $("#testAnim5").on({
+            'mouseover' : function() {
+                $(this).stop().animate({width:300}, 500); }, 'mouseout' : function() {
+                $(this).stop().animate({width:200}, 500); } });
+
+        const apiUrl = "https://jsonplaceholder.typicode.com";
+        const $list = $('.user-list');
+
+        $('.test-ajax').on('click', function() {
+            const $btn = $(this);
+
+    $.ajax({
+        url : apiUrl + '/users',
+        dataType : 'json'
+    })
+    .done((res) => {
+        $list.empty();
+        res.forEach(el => {
+            $list.append(`<li>${el.address.geo.lat} : ${el.address.geo.lng}</li>`);
+        })
+    })
+    .always(() => {
+        $btn.removeClass('loading');
+        $btn.prop('disabled', false);
+    });
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
