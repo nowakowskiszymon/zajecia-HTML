@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Zegary</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+<h1 id="czas"></h1>
+<div id='budzik'>
+    <h2>Ustaw budzik działający w czasie warszawskim</h2>
+            <select id='alarmhrs'></select>
+            <select id='alarmmins'></select>
+            <select id='alarmsecs'></select>
+            <select id="ampm">
+                <option value="AM">Przed Południem</option>
+                <option value="PM">Po Południu</option>
+            </select>
+    <div id='buttonHolder'>
+            <button id='setButton' onClick='alarmSet()'>Ustaw budzik</button> <br>
+            <button id='clearButton' onClick='alarmClear()'>Wyczyść budzik</button>
+    </div>
+</div>
+<div class="wall">
+    <div class="clock">
+        <div class="hand seconds"></div>
+        <div class="hand minutes"></div>
+        <div class="hand hours"></div
+    </div>
+</div>
+<h2 class="text">Czas w Warszawie</h2>
+<div class="wall">
+    <div class="clock">
+        <div class="hand aseconds"></div>
+        <div class="hand aminutes"></div>
+        <div class="hand ahours"></div
+    </div>
+</div>
+<h2 class="text">Czas w Nowym Jorku</h2>
+<div class="wall">
+    <div class="clock">
+        <div class="hand bseconds"></div>
+        <div class="hand bminutes"></div>
+        <div class="hand bhours"></div
+    </div>
+</div>
+<h2 class="text">Czas w Londynie</h2>
+<div class="wall">
+    <div class="clock">
+        <div class="hand cseconds"></div>
+        <div class="hand cminutes"></div>
+        <div class="hand chours"></div
+    </div>
+</div>
+<h2 class="text">Czas w Moskwie</h2>
+<div class="wall">
+    <div class="clock">
+        <div class="hand dseconds"></div>
+        <div class="hand dminutes"></div>
+        <div class="hand dhours"></div
+    </div>
+</div>
+<h2 class="text">Czas w Tokio</h2>
+<script type="text/javascript" src="Script.js"></script>
+<script type="text/javascript" src="budzik.js"></script>
+</body>
+</html>
